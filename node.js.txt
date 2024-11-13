@@ -1,0 +1,67 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  const htmlContent = `
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta name="msvalidate.01" content="D14962F5B13D124BBDFC9BE13E819B56" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>SportSurge - Stream Live NFL, MLB, NBA, NCAAB, NHL, MMA, BOXING.</title>
+    <meta name="description" content="StreamEast is a free sports streaming place, providing millions of viewers nationwide to watch soccer, nfl, boxing matches in HD quality. Watch Now!">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="StreamEast - Watch NFL, MLB, NBA, UFC and Football Streams 2024">
+    <meta property="og:description" content="StreamEast is a free sports streaming place, providing millions of viewers nationwide to watch soccer, nfl, boxing matches in HD quality. Watch Now!">
+    <meta property="og:url" content="https://streameast-0.pages.dev/">
+    <meta property="og:site_name" content="streameast">
+    <meta property="article:modified_time" content="2024-06-22T06:10:25+00:00">
+    <meta name="google-site-verification" content="6rZuHkBfwqdiFBdrWHUen2Ec3KAyVvM78GHjrMyjtZ4">
+    <link rel="canonical" href="https://streameast-0.pages.dev/">
+  
+    <style>
+      /* Add your styles here */
+      body {
+        margin: 0;
+        background: #0f0f0f;
+        font-family: 'Quicksand';
+      }
+      /* Additional CSS styles for page layout */
+    </style>
+  </head>
+  
+  <body>
+    <header></header>
+    <section>
+      <li>
+        <a href="https://reddit.bestreamsports.lol/" style="display: block; width: 450px; height: 60px; background-color: #28a745; color: black; text-align: center; text-decoration: none; line-height: 60px; border-radius: 30px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); transition: all 0.3s;">
+          <span style="background-color: yellow; padding: 5px 15px; border-radius: 15px; margin-right: 10px; font-weight: bold;">? Live</span>
+          <span style="font-weight: bold; font-size: 1.2em; color: black;">Streameast live</span>
+        </a>
+      </li>
+      <!-- Repeat this block for other links -->
+    </section>
+    <article>
+      <center class="mt-5">
+        <img src="https://v3---streameast-official.pages.dev/article-1.jpg" alt="Article logo" />
+      </center>
+      <div class="max-w-4xl mx-auto px-4">
+        <h1>What is StreamEast?</h1>
+        <p>StreamEast is an online platform that allows users to stream live sports events for free...</p>
+      </div>
+    </article>
+    <footer>© All rights reserved 2024 SportSurge</footer>
+  </body>
+  </html>
+  `;
+  res.send(htmlContent);
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
